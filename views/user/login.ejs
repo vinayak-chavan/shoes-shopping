@@ -11,7 +11,7 @@
 
                 <% } %>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-interval="40000" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="/images/mens-shoes-slider.jpg" alt="First slide">
@@ -23,7 +23,7 @@
 
                             <p class="h4 mb-4">Sign in</p>
 
-                            <input type="text" id="email" class="form-control mb-4" placeholder="E-mail" name="username"
+                            <input type="text" id="email" class="form-control mb-4" placeholder="E-mail" name="email"
                                 value="<%= typeof email !='undefined' ? email:'' %>" required>
                             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                             <input type="password" id="password" class="form-control mb-4" placeholder="Password"
